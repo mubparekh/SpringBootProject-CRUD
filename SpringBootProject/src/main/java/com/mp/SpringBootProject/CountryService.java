@@ -30,12 +30,9 @@ public class CountryService {
 		this.countryDao.updateCountry(country);
 		
 	}
-	
-	/*public void updateCountry(Country country){
-		this.countryDao.updateCountry(country);
+
+	public void insertCountry(Country country) {
+		this.countryDao.insertCountryToDb(country);
 	}
 
-	/*public void insertCountry(Country country) {
-		this.countryDao.insertCountryToDb(country);	
-	}*/
 }

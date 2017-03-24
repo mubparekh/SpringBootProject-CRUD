@@ -40,15 +40,9 @@ public class CountryDao {
 		c.setCountry_info(country.getCountry_info());
 		countries.put(country.getId(), country);
 	}
-	
-	/*public void updateCountry(Country country){
-		Country c = countries.get(country.getId());
-		c.setCountry_name(country.getCountry_name());
-		c.setCountry_info(country.getCountry_name());
-		countries.put(country.getId(), country);
-	}
 
-	/*public void insertCountryToDb(Country country) {
+	public void insertCountryToDb(Country country) {
 		this.countries.put(country.getId(), country);
-	}*/
+		
+	}
 }

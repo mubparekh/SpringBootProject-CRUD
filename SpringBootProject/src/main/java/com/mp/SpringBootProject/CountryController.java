@@ -37,6 +37,11 @@ public class CountryController {
 		countryService.updateCountry(country);
 	}
 	
+	@RequestMapping(method = RequestMethod.POST, consumes=MediaType.APPLICATION_JSON_VALUE)
+	public void insertCountry(@RequestBody Country country){
+		countryService.insertCountry(country);
+	}
+	
 	
 	/*@RequestMapping(method = RequestMethod.PUT, consumes=MediaType.APPLICATION_JSON_VALUE)
 	// the new information will be provided by JSON type text, hence input requires "consume type" and annotation "@RequestBody" to recognize the input
