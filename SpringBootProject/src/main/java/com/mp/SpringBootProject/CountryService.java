@@ -3,12 +3,14 @@ package com.mp.SpringBootProject;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CountryService {
 	
 	@Autowired
+	@Qualifier("mongoData")
 	private CountryDao countryDao;
 
 	public Collection<Country> getAllCountries(){
